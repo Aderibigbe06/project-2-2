@@ -1,4 +1,8 @@
-import { Box, Heading, Center, Stack, Button, Image, Text } from "@chakra-ui/react";
+"use client"
+
+import { Box, Heading, Center, Stack, Button, Image, Text, Flex, Icon } from "@chakra-ui/react";
+import { FaApple, FaGooglePlay } from 'react-icons/fa';
+
 
 export default function newPage2() {
     return(
@@ -15,6 +19,7 @@ export default function newPage2() {
                 </Stack>
             </Center>
         </Box>
+
 
 
 
@@ -44,9 +49,11 @@ export default function newPage2() {
 
 
 
+
         <div style = {{paddingTop: "50px", paddingLeft: "150px",}}>
             <Image src = "/images/f17.png" alt = "F17" width = "90&" height = "60%" />
         </div>
+
 
 
 
@@ -73,96 +80,210 @@ export default function newPage2() {
 
 
 
+
+
         <Box background = "orange.100" borderRadius = "25px" width = "93%" justifyContent = "center" style={{ margin: "0 auto", marginTop: "50px"  }}>
-            <div style = {{position: "relative",display: "flex", justifyContent: "center", width: "100%"}}>
-                <Image src = "/images/f6.png" alt = "F6" width = "75%" maxWidth = "950px" height = "auto" mb = "12" mt = "10" borderRadius = "20px" />
-            </div>
-     
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "-26px", gap: "6px", marginLeft: "85px" }}>
-                <div style = {{width: "40%", marginRight: "15px", marginBottom: "50px"}}>
-                    <Image src = "/images/f7.png" alt = "F7" style = {{width: "100%", height: "50%", borderRadius: "20px" }}/>
+                <div style = {{paddingLeft: "120px", paddingTop: "50px", }}>
+                  <Text width = "430px" height = "110px" fontFamily = "Poppins" fontWeight = "500" fontSize = "50px" lineHeight = "55px" letterSpacing = "0%" >
+                    Fuel <br /> 
+                    Convenience
+                  </Text>
                 </div>
-
-                <div style = {{width: "40%", marginRight: "95px", marginBottom: "50px"}}>
-                    <Image src = "/images/f8.png" alt = "F8" style = {{width: "100%", height: "50%", borderRadius: "20px"}} />
+        
+                <div style = {{paddingLeft: "120px", paddingTop: "20px"}}>
+                  <Text width = "626px" height = "54px" fontFamily = "Poppins" fontWeight = "400" fontSize = "18px" lineHeight = "100%" letterSpacing = "0%" >
+                    Locate fuel station nearby with real fuel updates when you need <br /> them 
+                  </Text>
                 </div>
-            </div>
-
-            <div style = {{display: "flex", justifyContent: "center", }}>
-                <Image src = "/images/f9.png" alt = "F9" width = "27%" height = "50%" mb = "12" borderRadius = "20px" style = {{marginTop: "-480px", marginRight: "-350px", zIndex: "1"}} />
-            </div>
-
-            <div style = {{display: "flex", justifyContent: "center", }}>
-                <Image src = "/images/circle.png" alt = "circle" width = "16%" height = "25%" mb = "12" borderRadius = "20px" style = {{marginTop: "-450px", marginRight: "-420px"}} />
-            </div>
-        </Box>
-   
-
-
-        <div style = {{display: "flex", justifyContent: "center", marginTop: "50px"}}>
-            <Image src = "/images/frame 9.png" alt = "Frame 9" width = "93%" maxHeight = "400px" height = "auto" mb = "12" borderRadius = "25px"/>
-        </div>
-
-
-
-        <div style = {{display: "flex", justifyContent: "center"}}>
-            <Image src = "/images/frame10.png" alt = "Frame10" width = "95%" maxHeight = "400px" height = "auto" mb = "12" />
-        </div>
-
-
-
-        <Box background = " #F4F7FE" >
-            <Center>
-                <div style = {{ marginTop: "50px", marginLeft: "-1000px", }}>
-                    <Image src = "/images/frame1.png" alt = "Frame1" width = "90%" height = "60%" />
+        
+                <div style = {{ paddingLeft: "950px" }}>
+                  <Button background = "orange.200" borderRadius = "50px" width = "70px" height = "70px" display = "flex" alignItems = "center" justifyContent = "center" padding = "0" style = {{ position: "relative", top: "-190px" }}>
+                    <Image src = "/images/f5.png" alt = "F5" width = "40px" height = "40px" borderRadius = "50px"/>
+                  </Button>
                 </div>
-            </Center>
+        
+                <Flex direction="column" align="center" w="100%">
+                  <Box background="white" width="85%" height="auto" borderRadius="25px" padding="40px" position="relative" overflow="hidden" mb="30px">
+                    <Box width="100%" display="flex" justifyContent="flex-start" marginBottom="30px" marginTop="-10px">
+                      <Image src="/images/i10.png" alt="i10" width="40px" height="auto" />
+                    </Box>
+        
+                    <Flex zIndex={2}>
+                      <Box flex={1} marginLeft="10px">
+                        <Text color="black" fontFamily="Poppins" fontWeight="500" fontSize="30px" lineHeight="100%" letterSpacing="0%">
+                          Locate Fuel in Seconds
+                        </Text>
+        
+                        <Text color="black" fontFamily="Poppins" fontWeight="400" fontSize="18px" lineHeight="140%" letterSpacing="0%" marginTop="10px">
+                          Our user-friendly platform helps you locate the <br />
+                          nearest fuel station based on your location <br />
+                          or your preferred area.
+                        </Text>
+                      </Box>
+        
+                      <Box position="absolute" top = "-40px" right="10px" width="50%" height="auto">
+                        <Image src="/images/f16.png" alt="f16" width="100%" height="auto" />
+                      </Box>
+        
+                      <Box width="50%" height="50%">
+                        <Image src="/images/i14.png" alt="i14" width="100%" height="auto" borderRadius="20px" />
+                      </Box>
+                    </Flex>
+                  </Box>
+              
+        
+                  <Flex width="85%" gap="30px" mb = "40px">
+                    <Box background="#FAA24B" width="50%" borderRadius="25px" display="flex" flexDirection="column" alignItems="center" padding="2rem" backgroundImage="url('/images/i15.png')" backgroundSize="cover" backgroundRepeat="no-repeat" backgroundPosition="center">
+                      <Image src="/images/i16.png" alt="i16" width="60%" height="auto" marginBottom="1rem"/>
+                  
+                    <Text fontFamily="Poppins" fontWeight="500" fontSize="30px" lineHeight="100%" letterSpacing="0%" textAlign="center" color="white" marginBottom="1rem">
+                      Fueling Your Day, Anywhere <br />
+                      Anytime
+                    </Text>
+                  
+                    <Text fontFamily="Poppins" fontSize="16px" lineHeight="100%" color="white">
+                      Whether you are on a cross-country road trip or <br />
+                      commuting to work, FuelFinder ensures that you are never far <br />
+                      from a solution.
+                    </Text>
+                    </Box>
+                
+        
+                    <Box background="black" width="50%" borderRadius="25px" padding="2rem" position="relative" minHeight="300px">
+                      <Box position="absolute" top="30px" right="-10px" zIndex="1">
+                        <Image src="/images/f9.png" alt="F9" width="70%" height="auto" borderRadius="20px"/>
+                      </Box>
+              
+                      <Box position="absolute" top="55px" right="70px">
+                        <Image src="/images/circle.png" alt="circle" width="75%" height="auto" />
+                      </Box>
+              
+                      <Flex direction="column" justifyContent="flex-end" alignItems="center" height="100%" pb="4" >
+                        <Text color="white" fontFamily="Poppins" fontWeight="500" fontSize="30px" lineHeight="100%" letterSpacing="0%" marginBottom="15px" textAlign="center">
+                          Real-Time Updates
+                        </Text>
+                
+                        <Text color="white" fontFamily="Poppins" fontSize="16px" lineHeight="100%">
+                          See the most up-to-dates locations and availability of <br />
+                          nearby stations.
+                        </Text>
+                      </Flex>
+                    </Box> 
+                  </Flex>
+                </Flex>
+            </Box>
+
+
+
+
+
+            <Box background = "#003399" marginLeft="50px" width="93%" height="100%" borderRadius="25px" padding="40px" position="relative" overflow="hidden" marginBottom = "50px" marginTop = "50px">
+                <Box width="100%" display="flex" justifyContent="flex-start" marginBottom="30px" marginTop="-10px">
+                    <Image src="/images/i10.png" alt="i10" width="40px" height="auto" />
+                </Box>
+
+                <Text fontFamily="Poppins" fontWeight="500" fontSize="50px" lineHeight="59px" letterSpacing="0%" color = "white">
+                    <Text as = "span" color = "yellow.500">Trusted by </Text>Movers, <br />
+                        Shakers,
+                    <Text as = "span" color = "yellow.500"> and </Text> <br />
+                        Planet Savers!
+                </Text>
+
+
+                <Box position="absolute" top = "-40px" right="10px" width="100%" height="auto">
+                    <Image src="/images/i17.png" alt="i17" width="100%" height="auto" />
+                </Box>
+
+
+                <Box position="absolute" top = "-40px" right="10px" width="100%" height="auto" >
+                    <Image src="/images/i18.png" alt="i18" width="100%" height="auto" zIndex = {1} opacity={0.15}/>
+                </Box>
+            </Box>
+
+
+
+
+
+            <Box width = "100%" background="linear-gradient(88.81deg, rgba(255, 230, 142, 0) -0.15%, #F3F8FF 33.24%, #FFFFFF 64.13%, #F4F9FF 78.87%, #F8F3E7 109.42%)" textAlign = "center" marginBottom = "50px"  px="20px" py="30px">
+                <Text fontFamily="Ubuntu" fontWeight="500" fontSize="55px" lineHeight="100%" letterSpacing="0%" marginBottom = "20px">
+                  Ready to Join the Energy <br/>
+                  Revolution?
+                </Text>
+        
+                <Text fontFamily="Poppins" fontWeight="400" fontSize="24px" lineHeight="100%" letterSpacing="0%" marginBottom = "30px">
+                  Take the first step to a sustainable and efficient future. <br />
+                  Explore our renewable energy solutions today.
+                </Text>
+        
+                <Flex  gap="20px" mb = "40px">
+                    <Button borderRadius="40px" width = "20%" height = "auto" size = "lg" padding = "12px" marginLeft = "400px">
+                        <Icon as={FaApple} boxSize="10" color="white"/>
+                        <Text>Download on the <br />
+                            App Store</Text>
+                    </Button>
+        
+                    <Button  borderRadius="40px" width = "20%" height = "auto" size = "lg" padding = "12px">
+                        <Icon as={FaGooglePlay} boxSize="10" color="white"/>
+                        <Text>
+                            Google Play<br />
+                        </Text>
+                    </Button>
+                </Flex>
+            </Box>
+
+
+
+
+            <Box background = " #F4F7FE" >
+                <Center>
+                    <div style = {{ marginTop: "50px", marginLeft: "-1000px", }}>
+                        <Image src = "/images/frame1.png" alt = "Frame1" width = "90%" height = "60%" />
+                    </div>
+                </Center>
     
 
-            <div style = {{marginLeft: "70px", marginTop: "40px"}} >
-                <Image src = "/images/button.png" alt = "button" width = "10%" height = "50%" borderRadius = "30px"  />
-            </div>
+                <div style = {{marginLeft: "70px", marginTop: "40px"}} >
+                    <Image src = "/images/button.png" alt = "button" width = "10%" height = "50%" borderRadius = "30px"  />
+                </div>
 
 
-            <Center py = "4" style={{ marginTop: "-130px" }}>
-                <Stack direction = "row" gap = "40" align = "flex-start">
-                    <Stack gap = "2" align = "flex-start">
-                        <Text fontWeight = "600" fontSize = "20px">Company</Text>
-                        <Text>Home</Text>
-                        <Text>About us</Text>
-                        <Text>Partner with us</Text>
-                    </Stack>
-
-    
-                    <Stack gap = "2" align = "flex-start">
-                        <Text fontWeight = "600" fontSize = "20px">Products</Text>
-                        <Text>Eco Friendly</Text>
-                        <Text>Petroleum products</Text>
-                        <Text>EV Charging (coming soon)</Text>
-                        <Text>Service Technician (coming soon)</Text>
-                    </Stack>
+                <Center py = "4" style={{ marginTop: "-130px" }}>
+                    <Stack direction = "row" gap = "40" align = "flex-start">
+                        <Stack gap = "2" align = "flex-start">
+                            <Text fontWeight = "600" fontSize = "20px">Company</Text>
+                            <Text>Home</Text>
+                            <Text>About us</Text>
+                            <Text>Partner with us</Text>
+                        </Stack>
 
     
-                    <Stack gap = "2" align = "flex-start">
-                        <Text fontWeight = "600" fontSize = "20px">Support</Text>
-                        <Text>Privacy Policy</Text>
-                        <Text>Terms</Text>
-                        <Text>Contact</Text>
+                        <Stack gap = "2" align = "flex-start">
+                            <Text fontWeight = "600" fontSize = "20px">Products</Text>
+                            <Text>Eco Friendly</Text>
+                            <Text>Petroleum products</Text>
+                            <Text>EV Charging (coming soon)</Text>
+                            <Text>Service Technician (coming soon)</Text>
+                        </Stack>
+
+    
+                        <Stack gap = "2" align = "flex-start">
+                            <Text fontWeight = "600" fontSize = "20px">Support</Text>
+                            <Text>Privacy Policy</Text>
+                            <Text>Terms</Text>
+                            <Text>Contact</Text>
+                        </Stack>
+
                     </Stack>
-
-                </Stack>
-            </Center>
+                </Center>
 
 
-
-            <div style = {{ display: "flex", justifyContent: "center" }}>
-                <Image src = "/images/frame 4.png" alt = "Frame 4" width = "8%" height = "8%" />
-            </div>
-
+                <div style = {{ display: "flex", justifyContent: "center" }}>
+                    <Image src = "/images/frame 4.png" alt = "Frame 4" width = "8%" height = "8%" />
+                </div>
 
 
-            <Image src = "/images/fuel.png" alt = "Fuel" width = "100%" height = "90%" />
-        </Box>
+                <Image src = "/images/fuel.png" alt = "Fuel" width = "100%" height = "90%" />
+            </Box>
         </>
     )
 }
